@@ -1,13 +1,12 @@
 const form = document.getElementById('form-clima');
 const resultado = document.getElementById('resultado');
 let map; 
-// AIzaSyAtw89xqHIMywNw7hYhutR7dSRoAe5o7iA
 
 form.addEventListener('submit', async function (e) {
     e.preventDefault();
 
     const cidade = document.getElementById('cidade').value;
-    const apiKey = 'c70b9071feb9fbd0b7110192c68eb97e';
+    const apiKey = 'api key aqui openwhater';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apiKey}&lang=pt_br&units=metric`;
     
     try {
